@@ -7,20 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="form1" onSubmit="return checkForm(this);">
-        <input type="text" placeholder="Nb de plats" id="in">
-        <button type="button" onclick="getValue();">Récupérer la valeur</button>
+    <script>function multiplyBy()
+        {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                num3 = document.getElementById("3eNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2 * num3;
+        }
+        
+        function divideBy() 
+        { 
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                num3 = document.getElementById("3eNumber").value;
+        document.getElementById("result").innerHTML = num1 / num2 / num3;
+        }
 
-        <input type="text" placeholder="Nb de boissons" id="in2">
-        <button type="button" onclick="getValue();">Récupérer la valeur</button>
-
-        <input type="text" placeholder="Nb de supplements" id="in3">
-        <button type="button" onclick="getValue();">Récupérer la valeur</button>
+        
+       
 
 
-
+    </script>
+    </head>
+    <body>
+    <form>
+    Plats : <input type="text" id="firstNumber" /><br>
+    Boissons : <input type="text" id="secondNumber" /><br>
+    Desserts : <input type="text" id="3eNumber" /><br>
+    <input type="button" onClick="multiplyBy()" Value="Multiply" />
+    <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    <p>Montant a payer : <br>
+    <span id = "result"></span>
+    </p>
 
 
     <script src="/exo calculatrice/script.js"></script>
+    </body>
+    </html>
+
 </body>
 </html>
