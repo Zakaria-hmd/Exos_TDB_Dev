@@ -1,5 +1,5 @@
-//let array1 = [];
- //onsole.log(array1.length);
+let array1 = [];
+ console.log(array1.length);
  
 //var prénom = ["Zakaria","nico","Laura","Sandra","iles"]
     //prénom.push;
@@ -7,19 +7,12 @@
 
    
 
-    //const prénom = ["Zakaria","nico","Laura","Sandra","iles"]
-    //prénom.sort();
+    var prénom = ["Zakaria" , "nico", "Laura", "Sandra", "iles"]
+    prénom.sort();
+    document.write(prénom)
     //console.log(prénom);
     //prénom.reverse();
   
-    function f(){
-            setTimeout("f()",1000);
-            d=new date();
-            h=d.getHours();
-            m=d.getMinutes();
-            s=d.getSeconds();
-            document.fo.horloge.value=h+" "+m+" "+s;
-                
-
-    }
+    const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+    console.log(d)
     
