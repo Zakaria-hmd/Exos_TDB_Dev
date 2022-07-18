@@ -5,17 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/exo_Formulaire/style.css">
+    <title>gestion de formulaire js</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <h2>Crée un compte</h2>
+        </div>
 
+        <form class="form" id="form">
+            <div class="form-conrol "></div>
+            <label for="">Nom d'utilisateur</label>
+            <input type="text" id="username" placeholder="Zak">
+            <small>Message d'erreur</small>
+        
+            <form class="form">
+                <div class="form-conrol "></div>
+                <label for="">Email</label>
+                <input type="text" id="Email" placeholder="Zakdu596@hotmail.fr">
+                <small>Message d'erreur</small>
 
-    <form action="" id="form1" onSubmit="return checkForm(this);">
-        <input type="text" placeholder="Nom , Prénom , âge" id="in">
-        <button type="button" onclick="getValue();">Récupérer la valeur</button>
+         
+                <form class="form">
+                    <div class="form-conrol"></div>
+                    <label for="">Mots de passe</label>
+                    <input type="text" id="password">
+                    <small>Message d'erreur</small>
 
-    </form>
+                
+                    <form class="form">
+                        <div class="form-conrol"></div>
+                        <label for="">Confirmation du mots de passe</label>
+                        <input type="text" id="password2" >
+                        <small>Message d'erreur</small><br />
+                        
+                 
+                         <button type="submit">S'inscrire</button>
+                    </form>
+    </div>
     <script src="/exo_Formulaire/script.js"></script>
 </body>
 
